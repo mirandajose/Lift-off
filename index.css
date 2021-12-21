@@ -2,6 +2,7 @@
   border: 1px solid black;   
   width: 100%;
 }
+
 .table thead th{
   background: rgb(161, 225, 255);
   cursor: pointer;
@@ -10,7 +11,7 @@
 .myDiv{
   margin-top: 10px;
 }
-
+/* commetn */
 input{
 border-top-style: hidden;
 border-right-style: hidden ;
