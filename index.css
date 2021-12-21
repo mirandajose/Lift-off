@@ -1,6 +1,25 @@
-table, th, td{
-    border: 1px solid black;    
+.table{
+  border: 1px solid black;   
+  width: 100%;
 }
+.table thead th{
+  background: rgb(161, 225, 255);
+  cursor: pointer;
+  height: 70px;
+}
+.myDiv{
+  margin-top: 10px;
+}
+
+input{
+border-top-style: hidden;
+border-right-style: hidden ;
+border-left-style: hidden;
+border-bottom-style: hidden ;
+width: 100%;
+}
+
+
 /* Code below extracted from https://codepen.io/neilpomerleau/pen/wzxzQr   */
 .rating {
     display: inline-block;

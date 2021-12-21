@@ -1,18 +1,32 @@
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
-           <table>
+           <table class="table">
                 <caption> Task manager board </caption>
-                    <tbody>
+                <thead>
                         <tr>
-                        <th>ID</th>
+                            <th>ID</th>
                             <th>Task description </th>
                             <th>Difficulty</th>
                             <th>Completed</th>
                         </tr>
+                </thead>
+                <tbody>
                         <tr>
-                            <td>1</td>
-                            <td>First project</td>
+                            <td>
+                              <form>
+                                <div class="myDiv">
+                                  <input type="text" placeholder="task ID">
+                                </div>
+                              </form>
+                            </td>
+                            <td>
+                                <form>
+                                  <div class="myDiv">
+                                    <input type="text" placeholder="task description">
+                                  </div>
+                                </form>
+                             </td>
                             <td><!-- Code extracted from https://codepen.io/neilpomerleau/pen/wzxzQr -->
                                 <form class="rating">
                                     <label>
@@ -48,10 +62,15 @@
                                   </form>
                                  <!-- Code extracted from https://codepen.io/neilpomerleau/pen/wzxzQr -->
                             </td>
-                            <td><input type="checkbox">
+                            <td>
+                              <form>
+                                <div class="myDiv">
+                                  <input type="checkbox">
+                                </div>
+                                </form>
                             </td>
                         </tr>
-                    </tbody>
+                </tbody>
             </table>
     </head>
 </html>
