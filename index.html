@@ -1,7 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
-           <table class="table">
+           <table id="tableID" class="table">
                 <caption> Task manager board </caption>
                 <thead>
                         <tr>
@@ -12,13 +12,35 @@
                         </tr>
                 </thead>
                 <tbody>
-                        <tr>
-                            <td>#1</td>
-                            <td>First task</td>
-                             <td>★ ★</td>
-                            <td>✅</td>
-                        </tr>
+                   
                 </tbody>
            </table>
+           <button id = "numLines" type="button" onclick="myFunction()">Add line</button>
     </head>
+    <script>
+        function myFunction()
+        {
+            var table = document.getElementById("tableID");
+            var btn = document.getElementById("numLines");
+            var numClicks = 1;
+
+            btn.onclick = function() {updateRows()};
+            
+            function updateRows()
+            {
+                var row = table.insertRow(-1); // insert row last position (-1)
+                var ID = row.insertCell(0); 
+                var taskDescription = row.insertCell(1);
+                var difficulty = row.insertCell(2);
+                var completed = row.insertCell(3);
+
+                ID.innerHTML = numClicks;
+                taskDescription.innerHTML = "Task number " + numClicks;
+                difficulty.innerHTML = "★ ★";
+                completed.innerHTML = "✅";
+
+                numClicks++;
+            }
+        }
+    </script>
 </html>
