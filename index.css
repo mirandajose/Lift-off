@@ -1,3 +1,21 @@
-table, th, td{
-    border: 1px solid black;    
+.table{
+  border: 1px solid black;   
+  width: 100%;
+}
+
+.table thead th{
+  background: rgb(161, 225, 255);
+  cursor: pointer;
+  height: 70px;
+}
+
+.table td
+{
+  text-align: center;
+}
+
+.table caption
+{
+padding: 15px;
+font-size: x-large;
 }
